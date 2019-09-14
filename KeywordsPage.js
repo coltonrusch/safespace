@@ -42,7 +42,7 @@ export default class KeywordsPage extends React.Component {
             title="Next"
             color = {constants.mainButtonColor}
             onPress={() => {
-              this.props.navigation.navigate("Details")
+              this.props.navigation.navigate("BrowserPage")
             }}
           />
         </View>
