@@ -7,7 +7,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.root}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>Embedded browser!</Text>
+          <Text style={styles.headerText}>SafeSpace</Text>
         </View>
 
         <View style={styles.browser}>
