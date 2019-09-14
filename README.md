@@ -1,12 +1,12 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://i.imgur.com/AZ2iWek.png" alt="Project logo"></a>
+ <img src="http://brownhackhealth.org/assets/images/BIH_Logo_Isolatedv2.png" alt="Hackathon logo"></a>
 </p>
-<h3 align="center">Project Title</h3>
+<h3 align="center">SafeSpace</h3>
 
 <div align="center">
 
-  [![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)](http://hackathon.url.com) 
+  [![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)](http://brownhackhealth.org) 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
   [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> SafeSpace is a multi-platform web browser built with React Native designed for people who have been through traumatic experiences and are seeking a smart, customizable, trigger-free web browsing experience. 
     <br> 
 </p>
 
