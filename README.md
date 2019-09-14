@@ -102,7 +102,10 @@ Add notes about how to use the system.
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@coltonrusch](https://github.com/coltonrusch) - 
+- [@andersonaddo](https://github.com/andersonaddo) - 
+- [@oceanpak](https://github.com/oceanpak) - 
+- [@jwhang7799](https://github.com/Jwhang7799) - 
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) 
 who participated in this project.
