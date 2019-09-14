@@ -2,43 +2,18 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { createAppContainer, StackActions, NavigationActions } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-
-
-class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-        <Button
-          title="Go to Details"
-          onPress={() => {
-            this.props.navigation.navigate("Details")
-          }}
-        />
-      </View>
-    );
-  }  
-}
-
-class DetailsScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
-      </View>
-    );
-  }  
-}
+import KeywordsPage from './KeywordsPage'
+import TriggerWarning from './TriggerWarning'
 
 const AppNavigator = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
+  Keywords: {
+    screen: KeywordsPage,
   },
-  Details: {
-    screen: DetailsScreen,
-  },
+  Warning: {
+    screen: TriggerWarning,
+  }
 }, {
-    initialRouteName: 'Home',
+    initialRouteName: 'Warning',
 });
 
 export default createAppContainer(AppNavigator);
