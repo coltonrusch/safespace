@@ -14,7 +14,7 @@ export default class SamplePages extends React.Component {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 
         <Text style ={{marginBottom: 10, fontSize: 40}}>
-              SafeSpace Sample Pages
+              PreCursor Sample Pages
         </Text>
 
           <Button

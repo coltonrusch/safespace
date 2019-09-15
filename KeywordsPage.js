@@ -20,7 +20,7 @@ export default class KeywordsPage extends React.Component {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 
         <Text style ={{marginBottom: 10, fontSize: 40}}>
-              SafeSpace
+        PreCursor
         </Text>
 
           <Text style ={{marginBottom: 40}}>
