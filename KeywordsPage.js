@@ -5,13 +5,15 @@ import * as constants from "./CONSTANTS"
 import AsyncStorage from '@react-native-community/async-storage';
 import * as arrayMaker from './getstrings'
 
-function weightedwords(word, weight){
-  this.words = word;
-  this.weights = weight;
-}
-
 export default class KeywordsPage extends React.Component {
-    state = {input1: "", input2: ""}
+    state = {input1: "concept", input2: "word"}
+
+    constructor(props) {
+
+      super(props);
+      this.storeData = this.storeData.bind(this);
+
+    }
     render() {
       return (
         <ScrollView style={styles.scrollView}>
@@ -33,6 +35,7 @@ export default class KeywordsPage extends React.Component {
             multiline
             numberOfLines={6}
             editable
+            value = {this.state.input1}
             onChangeText={(text) => this.setState(previousState => (
         {input1: text }))}
             />
@@ -45,6 +48,7 @@ export default class KeywordsPage extends React.Component {
             multiline
             numberOfLines={6}
             editable
+            value = {this.state.input2}
             onChangeText={(text) => this.setState(previousState => (
         {input2: text }))}
             />
@@ -67,7 +71,7 @@ export default class KeywordsPage extends React.Component {
       );
     }
 
-    storeData = async () => {
+    async storeData  () {
       var nameobjectlist = []
 
       var singularConcept = this.state.input1.split("\n")[0];
@@ -76,25 +80,25 @@ export default class KeywordsPage extends React.Component {
       let stringList = []
       let weightList = [] 
       
-      arrayMaker.getString(singularConcept, "words")
+      await arrayMaker.getString(singularConcept, "words")
       .then(res => {
-        console.warn("Striasdfsdzfx" + res)
-        stringList = res
-        arrayMaker.getString(singularConcept, "weights")
-        .then(res => {
-          weightList = res;
-          }).then(res2 => {
-            for (var ii = 0; ii < stringList.length; ii++) {
-              nameobjectlist.push(weightedwords(stringList[ii], weightList[ii]))  
-            }
-            var specificwordlist = this.state.input2.split("\n")[0]
-            nameobjectlist.push(weightedwords(specificwordlist[i], 100))
-      
-            AsyncStorage.setItem('@AllObjects', nameobjectlist)
-      
-            this.props.navigation.navigate("SamplePages")
+        stringList = res 
+      })
+
+      await arrayMaker.getString(singularConcept, "weights")
+      .then(res => {
+        weightList = res;
         })
-      }).catch(error => console.error(error));
+        
+      for (var ii = 0; ii < stringList.length; ii++) {
+        nameobjectlist.push({word: stringList[ii], weight: weightList[ii]})  
+      }
+      var specificwordlist = this.state.input2.split("\n")[0]
+      nameobjectlist.push({word: specificwordlist[i], weight: 100})
+
+      console.warn(nameobjectlist)
+      this.props.navigation.navigate("SamplePages", {words: nameobjectlist})
+
 
 
   }
