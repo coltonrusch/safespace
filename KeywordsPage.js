@@ -3,10 +3,15 @@ import { View, Text, Button, TextInput, StyleSheet, ScrollView } from 'react-nat
 import { StackActions, NavigationActions } from 'react-navigation';
 import * as constants from "./CONSTANTS"
 import AsyncStorage from '@react-native-community/async-storage';
+import * as arrayMaker from './getstrings'
+
+function weightedwords(word, weight){
+  this.words = word;
+  this.weights = weight;
+}
 
 export default class KeywordsPage extends React.Component {
     state = {input1: "", input2: ""}
-
     render() {
       return (
         <ScrollView style={styles.scrollView}>
@@ -56,8 +61,25 @@ export default class KeywordsPage extends React.Component {
     }
     storeData = () => {
     try {
-      AsyncStorage.setItem('@Concepts', this.state.input1)
-      AsyncStorage.setItem('@Specifics', this.state.input2)
+      var nameobjectlist = []
+      var conceptlist = this.state.input1.split("\n")
+      for (var concept in conceptlist) {
+        stringList = arrayMaker.getString(concept, "words");
+        weightList = arrayMaker.getString(concept, "weights")
+        var i;
+        for (i = 0; i < stringList.length; i++) {
+          nameobjectlist.push(weightedwords(stringList[i], weightList[i]))
+        }
+      }
+      var specificwordlist = this.state.input2.split("\n")
+      for (var specificword in specificwordlist) {
+        specificStringList = arrayMaker.getString(specificword, "words");
+        var j;
+        for (j = 0; j < specificStringList.length; j++) {
+          nameobjectlist.push(weightedwords(specificStringList[i], 100))
+        }
+      }
+      AsyncStorage.setItem('@AllObjects', nameobjectlist)
       this.props.navigation.navigate("BrowserPage")
       } catch (e) {
       // saving error
