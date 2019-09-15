@@ -80,20 +80,20 @@ export default class KeywordsPage extends React.Component {
       .then(res => {
         console.warn("Striasdfsdzfx" + res)
         stringList = res
-        returnarrayMaker.getString(singularConcept, "weights")
-      })
-      .then(res => {
-        weightList = res;
-        }).then(res2 => {
-          for (var ii = 0; ii < stringList.length; ii++) {
-            nameobjectlist.push(weightedwords(stringList[ii], weightList[ii]))  
-          }
-          var specificwordlist = this.state.input2.split("\n")[0]
-          nameobjectlist.push(weightedwords(specificwordlist[i], 100))
-    
-          AsyncStorage.setItem('@AllObjects', nameobjectlist)
-    
-          this.props.navigation.navigate("SamplePages")
+        arrayMaker.getString(singularConcept, "weights")
+        .then(res => {
+          weightList = res;
+          }).then(res2 => {
+            for (var ii = 0; ii < stringList.length; ii++) {
+              nameobjectlist.push(weightedwords(stringList[ii], weightList[ii]))  
+            }
+            var specificwordlist = this.state.input2.split("\n")[0]
+            nameobjectlist.push(weightedwords(specificwordlist[i], 100))
+      
+            AsyncStorage.setItem('@AllObjects', nameobjectlist)
+      
+            this.props.navigation.navigate("SamplePages")
+        })
       }).catch(error => console.error(error));
 
 
