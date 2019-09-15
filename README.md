@@ -37,9 +37,7 @@
 PreCursor is a web browser for victims of trauma that considers the presence of trauma triggers on the Internet. Victims of trauma (or their therapist(s)) can provide PreCursor specific words and concepts that could cause a trauma-based reaction in the user, and PreCursor will provide the user AI-based warnings and filtering of webpages and their content based on the user's needs. Overall, this limits the potential for triggering content to be consumed inadvertently, and provides the user sufficient warning to consume the potentially triggering content in a prepared state of mind.
 
 ## 🚀 Future Scope <a name = "future_scope"></a>
-Write about what you could not develop during the course of the Hackathon; and about what your project can achieve 
-in the future.
-
+Smart trigger detection through forms of media beyond text, such as with audio, image, and video, is a feature that is very important to the team and will be the first priority for development after the Hackathon. In the future, we will develop a more robust algorithm for detecting and removing trigger words through sophisticated natural language processing methods. Additionally, we plan on incorporating specific, instantaneous user feedback within PreCursor to train our algorithm's trigger detection process, giving the user even more agency over their web browsing experience. 
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 - [React Native](https://facebook.github.io/react-native/)
@@ -51,8 +49,8 @@ in the future.
 - [@andersonaddo](https://github.com/andersonaddo) - Anderson Addo
 - [@oceanpak](https://github.com/oceanpak) - Ocean Pak
 - [@jwhang7799](https://github.com/Jwhang7799) - Jason Whang
+- [@](https://github.com/) - Justin Sanders
+- [@](https://github.com/) - David Moon
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [React Native Simple Browser](https://github.com/liron-navon/react-native-simple-browser)
