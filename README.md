@@ -47,6 +47,7 @@ in the future.
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 - [React Native](https://facebook.github.io/react-native/)
+- [Word Assocation API](https://wordassociations.net/en/kinds)
 
 
 ## ✍️ Authors <a name = "authors"></a>
