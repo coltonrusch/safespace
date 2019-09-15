@@ -33,10 +33,6 @@
 - [Acknowledgments](#acknowledgments)
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
-It is useful to design and follow a specific format when writing a problem statement. While there are several options
-for doing this, the following is a simple and straightforward template often used in Business Analysis to maintain
-focus on defining the problem.
-
 - IDEAL: Trauma victims are able to surf the web without having to worry about coming across potential trauma triggers.
 - REALITY: Given the volume of unfiltered, untagged information uploaded onto the Internet and the nature of the modern web browsing experience, trauma victims can be inadvertently exposed to trauma triggers without warning. 
 - CONSEQUENCES: Trauma victims may have unwanted emotional reactions to trauma triggers on the internet, possibly worsening their mental state and reopening the wounds of trauma.
