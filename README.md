@@ -25,7 +25,6 @@
 - [Idea / Solution](#idea)
 - [Future Scope](#future_scope)
 - [Technology Stack](#tech_stack)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 
