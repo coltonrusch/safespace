@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="http://brownhackhealth.org/assets/images/BIH_Logo_Isolatedv2.png" alt="Hackathon logo"></a>
+ <img src="https://lh3.googleusercontent.com/Dvm6DA5fW3zzQ9RRGP5W3BGMNw4rhMUqdIdnPBqNq_UvBMjbPRJud7WGd0eNObd_CJfnm9_HlkQyQQ5dU0qbSoOePYRIp5K6u-Pst1TecIlRuyXzDXlNJFX_Yp_gbTWqp0Rc3Fmc" alt="project logo"></a>
 </p>
 <h3 align="center">PreCursor</h3>
 
