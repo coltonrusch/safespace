@@ -22,11 +22,11 @@ export default class KeywordsPage extends React.Component {
         </Text>
 
           <Text style ={{marginBottom: 40}}>
-              Please select the keywords that make you uncomfortable
+              Please select two keywords that make you uncomfortable
           </Text>
 
           <Text style ={{marginBottom: 10}}>
-              Concepts
+              One Concept
           </Text>
           <TextInput
             style = {{borderRadius: 4,borderWidth: 0.5, borderColor: '#d6d7da', width: "80%", marginBottom: 30}}
@@ -38,7 +38,7 @@ export default class KeywordsPage extends React.Component {
             />
 
             <Text style ={{marginBottom: 10}}>
-              Specific Words (like names)
+              One Specific Word (like a names)
             </Text>
           <TextInput
             style = {{borderRadius: 4,borderWidth: 0.5, borderColor: '#d6d7da', width: "80%", marginBottom: 30}}
@@ -50,40 +50,53 @@ export default class KeywordsPage extends React.Component {
             />
 
           <Button
+          style = {{marginBottom: 30}}
             title="Next"
             color = {constants.mainButtonColor}
             onPress={ this.storeData }
+          />
+
+          <Button
+            title="Skip"
+            color = {constants.mainButtonColor}
+            onPress={() => this.props.navigation.navigate("SamplePages") }
           />
         </View>
         </ScrollView>
 
       );
     }
-    storeData = () => {
-    try {
+
+    storeData = async () => {
       var nameobjectlist = []
-      var conceptlist = this.state.input1.split("\n")
-      for (var concept in conceptlist) {
-        stringList = arrayMaker.getString(concept, "words");
-        weightList = arrayMaker.getString(concept, "weights")
-        var i;
-        for (i = 0; i < stringList.length; i++) {
-          nameobjectlist.push(weightedwords(stringList[i], weightList[i]))
-        }
-      }
-      var specificwordlist = this.state.input2.split("\n")
-      for (var specificword in specificwordlist) {
-        specificStringList = arrayMaker.getString(specificword, "words");
-        var j;
-        for (j = 0; j < specificStringList.length; j++) {
-          nameobjectlist.push(weightedwords(specificStringList[i], 100))
-        }
-      }
-      AsyncStorage.setItem('@AllObjects', nameobjectlist)
-      this.props.navigation.navigate("BrowserPage")
-      } catch (e) {
-      // saving error
-    }
+
+      var singularConcept = this.state.input1.split("\n")[0];
+      var i;
+
+      let stringList = []
+      let weightList = [] 
+      
+      arrayMaker.getString(singularConcept, "words")
+      .then(res => {
+        console.warn("Striasdfsdzfx" + res)
+        stringList = res
+        returnarrayMaker.getString(singularConcept, "weights")
+      })
+      .then(res => {
+        weightList = res;
+        }).then(res2 => {
+          for (var ii = 0; ii < stringList.length; ii++) {
+            nameobjectlist.push(weightedwords(stringList[ii], weightList[ii]))  
+          }
+          var specificwordlist = this.state.input2.split("\n")[0]
+          nameobjectlist.push(weightedwords(specificwordlist[i], 100))
+    
+          AsyncStorage.setItem('@AllObjects', nameobjectlist)
+    
+          this.props.navigation.navigate("SamplePages")
+      }).catch(error => console.error(error));
+
+
   }
 }
 

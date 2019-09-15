@@ -4,7 +4,7 @@ import { StackActions, NavigationActions } from 'react-navigation';
 import * as constants from "./CONSTANTS"
 
 
-export default class KeywordsPage extends React.Component {
+export default class SamplePages extends React.Component {
     render() {
       return (
         <ScrollView style={styles.scrollView}>
@@ -15,6 +15,7 @@ export default class KeywordsPage extends React.Component {
         </Text>
 
           <Button
+          style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -22,22 +23,7 @@ export default class KeywordsPage extends React.Component {
             }}
           />
           <Button
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
+                    style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -46,6 +32,7 @@ export default class KeywordsPage extends React.Component {
           />
 
           <Button
+                    style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -54,6 +41,7 @@ export default class KeywordsPage extends React.Component {
           />
 
           <Button
+                    style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -62,6 +50,7 @@ export default class KeywordsPage extends React.Component {
           />
 
           <Button
+                    style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -70,6 +59,7 @@ export default class KeywordsPage extends React.Component {
           />
 
           <Button
+                    style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -78,6 +68,7 @@ export default class KeywordsPage extends React.Component {
           />
 
           <Button
+                    style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -86,6 +77,25 @@ export default class KeywordsPage extends React.Component {
           />
 
           <Button
+                    style = {styles.button}
+            title="Page 1"
+            color = {constants.mainButtonColor}
+            onPress={() => {
+              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
+            }}
+          />
+
+          <Button
+                    style = {styles.button}
+            title="Page 1"
+            color = {constants.mainButtonColor}
+            onPress={() => {
+              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
+            }}
+          />
+
+          <Button
+                    style = {styles.button}
             title="Page 1"
             color = {constants.mainButtonColor}
             onPress={() => {
@@ -106,4 +116,7 @@ const styles = StyleSheet.create({
     text: {
       fontSize: 42,
     },
+    button: {
+      marginBottom: 15
+    }
   });

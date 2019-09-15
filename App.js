@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import KeywordsPage from './KeywordsPage'
 import TriggerWarning from './TriggerWarning'
 import BrowserPage from './MainBrowser'
+import Samples from './SamplePages'
 
 const AppNavigator = createStackNavigator({
   Keywords: {
@@ -15,6 +16,9 @@ const AppNavigator = createStackNavigator({
   },
   BrowserPage: {
     screen: BrowserPage,
+  },
+  SamplePages: {
+    screen: Samples,
   }
 }, {
     initialRouteName: 'Warning',
