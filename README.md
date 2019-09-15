@@ -40,66 +40,22 @@
 ## 💡 Idea / Solution <a name = "idea"></a>
 PreCursor is a web browser for victims of trauma that considers the presence of trauma triggers on the Internet. Victims of trauma (or their therapist(s)) can provide PreCursor specific words and concepts that could cause a trauma-based reaction in the user, and PreCursor will provide the user AI-based warnings and filtering of webpages and their content based on the user's needs. Overall, this limits the potential for triggering content to be consumed inadvertently, and provides the user sufficient warning to consume the potentially triggering content in a prepared state of mind.
 
-## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
-- What are the dependencies of your project?
-- Describe each limitation in detailed but concise terms
-- Explain why each limitation exists
-- Provide the reasons why each limitation could not be overcome using the method(s) chosen to acquire.
-- Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if 
-appropriate, describe how these limitations could point to the need for further research.
-
 ## 🚀 Future Scope <a name = "future_scope"></a>
 Write about what you could not develop during the course of the Hackathon; and about what your project can achieve 
 in the future.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
-These instructions will get you a copy of the project up and running on your local machine for development 
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [React Native](https://facebook.github.io/react-native/)
+
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@coltonrusch](https://github.com/coltonrusch) - Colton Rusch
 - [@andersonaddo](https://github.com/andersonaddo) - Anderson Addo
 - [@oceanpak](https://github.com/oceanpak) - Ocean Pak
 - [@jwhang7799](https://github.com/Jwhang7799) - Jason Whang
-- 
-- 
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-- https://github.com/liron-navon/react-native-simple-browser - Browser Functionality
-
 - Hat tip to anyone whose code was used
 - Inspiration
 - References

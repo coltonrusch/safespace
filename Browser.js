@@ -10,6 +10,7 @@ import {
     ActivityIndicator
 } from "react-native";
 import {WebView} from "react-native-webview";
+import HTMLView from 'react-native-htmlview';
 
 import * as constants from "./CONSTANTS"
 
@@ -30,7 +31,6 @@ class Browser extends Component {
                 </View>             
 
                     <WebView
-                        ref={this.setBrowserRef}
                         originWhitelist={['*']}
                         source={{html: this.state.editedHTML}}
                         onLoad={this.onBrowserLoad}
