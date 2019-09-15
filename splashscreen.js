@@ -7,7 +7,7 @@ import {
 } 
 from 'react-native';
 
-export default class App extends React.Component {
+export default class splashscreen extends React.Component {
   render() {
     return (
       <ImageBackground source ={require('./background.png')} style={styles.container}>
