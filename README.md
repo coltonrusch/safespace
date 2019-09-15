@@ -7,10 +7,10 @@
 <div align="center">
 
   [![Hackathon](https://img.shields.io/badge/Hackathon-Brown%20Hack%20Health-orange)](http://brownhackhealth.org) 
-  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![GitHub Issues](https://img.shields.io/badge/issues-0-yellow)](https://github.com/coltonrusch/safespace/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/coltonrusch/safespace/pulls)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+  [![Status](https://img.shields.io/badge/status-not%20maintained-red)]() 
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) 
+  
+  [![Warning](https://img.shields.io/badge/prepare%20to%20see-hackathon%20spaghetti%20code-yellow)]()
 
 </div>
 
@@ -51,6 +51,3 @@ Smart trigger detection through forms of media beyond text, such as with audio, 
 - [@jwhang7799](https://github.com/Jwhang7799) - Jason Whang
 - [@](https://github.com) - Justin Sanders
 - [@amoon7](https://github.com/amoon7) - David Moon
-
-## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-- [React Native Simple Browser](https://github.com/liron-navon/react-native-simple-browser)
