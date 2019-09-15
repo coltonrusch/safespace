@@ -15,7 +15,7 @@ export default class TriggerWarning extends React.Component {
         </Text>
 
           <Text style ={{marginBottom: 40, color: "white"}}>
-              In order for safespace to be able to be helpful, we are going to have to ask you some sensitive questions questions about your triggers
+              In order for safespace to be able to be helpful, we are going to have to ask you some sensitive questions questions about your triggers. Please note that this app won't protect you from all triggerable content, but it will do the best that it can.
           </Text>
           
           <TouchableHighlight

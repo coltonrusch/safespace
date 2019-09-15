@@ -2,9 +2,11 @@ import React from 'react';
 import { View, Text, Button, TextInput, StyleSheet, ScrollView } from 'react-native';
 import { StackActions, NavigationActions } from 'react-navigation';
 import * as constants from "./CONSTANTS"
-
+import AsyncStorage from '@react-native-community/async-storage';
 
 export default class KeywordsPage extends React.Component {
+    state = {input1: "", input2: ""}
+
     render() {
       return (
         <ScrollView style={styles.scrollView}>
@@ -17,7 +19,7 @@ export default class KeywordsPage extends React.Component {
           <Text style ={{marginBottom: 40}}>
               Please select the keywords that make you uncomfortable
           </Text>
-        
+
           <Text style ={{marginBottom: 10}}>
               Concepts
           </Text>
@@ -26,6 +28,8 @@ export default class KeywordsPage extends React.Component {
             multiline
             numberOfLines={6}
             editable
+            onChangeText={(text) => this.setState(previousState => (
+        {input1: text }))}
             />
 
             <Text style ={{marginBottom: 10}}>
@@ -36,21 +40,30 @@ export default class KeywordsPage extends React.Component {
             multiline
             numberOfLines={6}
             editable
+            onChangeText={(text) => this.setState(previousState => (
+        {input2: text }))}
             />
-          
+
           <Button
             title="Next"
             color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage")
-            }}
+            onPress={ this.storeData }
           />
         </View>
         </ScrollView>
 
       );
-    }  
+    }
+    storeData = () => {
+    try {
+      AsyncStorage.setItem('@Concepts', this.state.input1)
+      AsyncStorage.setItem('@Specifics', this.state.input2)
+      this.props.navigation.navigate("BrowserPage")
+      } catch (e) {
+      // saving error
+    }
   }
+}
 
 const styles = StyleSheet.create({
     scrollView: {
