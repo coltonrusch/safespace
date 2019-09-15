@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import * as arrayMaker from './getstrings'
 
 export default class KeywordsPage extends React.Component {
-    state = {input1: "banana", input2: "Justin"}
+    state = {input1: "", input2: ""}
 
     constructor(props) {
 

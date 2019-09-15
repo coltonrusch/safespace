@@ -64,7 +64,7 @@ class Browser extends Component {
 
         let url = this.props.navigation.state.params.url;
         wordList = this.props.navigation.state.params.words;
-        let replacer = "😀😀😀😀😀😀😀😀"
+        let replacer = "■■■■■■■■"
 
         this.getHTML(url)
             .then(html => this.replaceText(html, url, replacer))

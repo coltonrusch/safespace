@@ -6,6 +6,7 @@ import KeywordsPage from './KeywordsPage'
 import TriggerWarning from './TriggerWarning'
 import BrowserPage from './Browser'
 import Samples from './SamplePages'
+import Splash from './splashscreen'
 
 const AppNavigator = createStackNavigator({
   Keywords: {
@@ -19,9 +20,12 @@ const AppNavigator = createStackNavigator({
   },
   SamplePages: {
     screen: Samples,
-  }
+  },
+  Splash: {
+    screen: Splash,
+  },
 }, {
-    initialRouteName: 'Warning',
+    initialRouteName: 'Splash',
 });
 
 export default createAppContainer(AppNavigator);
