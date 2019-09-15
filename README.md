@@ -90,10 +90,12 @@ Add notes about how to use the system.
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@coltonrusch](https://github.com/coltonrusch) - 
-- [@andersonaddo](https://github.com/andersonaddo) - 
-- [@oceanpak](https://github.com/oceanpak) - 
-- [@jwhang7799](https://github.com/Jwhang7799) - 
+- [@coltonrusch](https://github.com/coltonrusch) - Colton Rusch
+- [@andersonaddo](https://github.com/andersonaddo) - Anderson Addo
+- [@oceanpak](https://github.com/oceanpak) - Ocean Pak
+- [@jwhang7799](https://github.com/Jwhang7799) - Jason Whang
+- 
+- 
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
 - https://github.com/liron-navon/react-native-simple-browser - Browser Functionality
