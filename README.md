@@ -6,7 +6,7 @@
 
 <div align="center">
 
-  [![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)](http://brownhackhealth.org) 
+  [![Hackathon](https://img.shields.io/badge/Hackathon-Brown%20Hack%20Health-orange)](http://brownhackhealth.org) 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
   [![GitHub Issues](https://img.shields.io/badge/issues-0-yellow)](https://github.com/coltonrusch/safespace/issues)
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/coltonrusch/safespace/pulls)
