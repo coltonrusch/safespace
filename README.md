@@ -49,8 +49,8 @@ Smart trigger detection through forms of media beyond text, such as with audio, 
 - [@andersonaddo](https://github.com/andersonaddo) - Anderson Addo
 - [@oceanpak](https://github.com/oceanpak) - Ocean Pak
 - [@jwhang7799](https://github.com/Jwhang7799) - Jason Whang
-- [@](https://github.com/) - Justin Sanders
-- [@](https://github.com/) - David Moon
+- [@](https://github.com) - Justin Sanders
+- [@amoon7](https://github.com/amoon7) - David Moon
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
 - [React Native Simple Browser](https://github.com/liron-navon/react-native-simple-browser)
