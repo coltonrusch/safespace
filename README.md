@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> PreCursor is a multi-platform web browser built with React Native designed for people who have been through traumatic experiences and are seeking smart and customizable software that helps deliver a trigger-free web browsing experience. 
+<p align="center"> PreCursor is a multi-platform web browser built with React Native designed for people who have been through traumatic experiences and are seeking a smart and customizable software solution to deliver a trigger-free web browsing experience. 
     <br> 
 </p>
 
@@ -98,9 +98,6 @@ Add notes about how to use the system.
 - [@andersonaddo](https://github.com/andersonaddo) - 
 - [@oceanpak](https://github.com/oceanpak) - 
 - [@jwhang7799](https://github.com/Jwhang7799) - 
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) 
-who participated in this project.
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
 - https://github.com/liron-navon/react-native-simple-browser - Browser Functionality
