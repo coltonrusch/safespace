@@ -6,6 +6,9 @@ import * as constants from "./CONSTANTS"
 
 export default class SamplePages extends React.Component {
     render() {
+
+      let words = this.props.navigation.getParam("words", []);
+
       return (
         <ScrollView style={styles.scrollView}>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -16,90 +19,19 @@ export default class SamplePages extends React.Component {
 
           <Button
           style = {styles.button}
-            title="Page 1"
+            title="Fruits"
             color = {constants.mainButtonColor}
             onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
+              this.props.navigation.navigate("BrowserPage", {url: "https://en.wikipedia.org/wiki/Fruit", words: words})
             }}
           />
+          
           <Button
-                    style = {styles.button}
-            title="Page 1"
+            style = {styles.button}
+            title="PMs of Canada"
             color = {constants.mainButtonColor}
             onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
-            }}
-          />
-
-          <Button
-                    style = {styles.button}
-            title="Page 1"
-            color = {constants.mainButtonColor}
-            onPress={() => {
-              this.props.navigation.navigate("BrowserPage", {url: "Random URL"})
+              this.props.navigation.navigate("BrowserPage", {url: "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Canada", words: ["Justin"]})
             }}
           />
         </View>

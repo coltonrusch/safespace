@@ -6,7 +6,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import * as arrayMaker from './getstrings'
 
 export default class KeywordsPage extends React.Component {
-    state = {input1: "concept", input2: "word"}
+    state = {input1: "banana", input2: "Justin"}
 
     constructor(props) {
 
@@ -94,10 +94,11 @@ export default class KeywordsPage extends React.Component {
         nameobjectlist.push({word: stringList[ii], weight: weightList[ii]})  
       }
       var specificwordlist = this.state.input2.split("\n")[0]
+      stringList.push(specificwordlist[i])
+      stringList.push(singularConcept)
       nameobjectlist.push({word: specificwordlist[i], weight: 100})
 
-      console.warn(nameobjectlist)
-      this.props.navigation.navigate("SamplePages", {words: nameobjectlist})
+      this.props.navigation.navigate("SamplePages", {words: stringList})
 
 
 

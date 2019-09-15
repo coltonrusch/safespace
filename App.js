@@ -4,7 +4,7 @@ import { createAppContainer, StackActions, NavigationActions } from 'react-navig
 import { createStackNavigator } from 'react-navigation-stack';
 import KeywordsPage from './KeywordsPage'
 import TriggerWarning from './TriggerWarning'
-import BrowserPage from './MainBrowser'
+import BrowserPage from './Browser'
 import Samples from './SamplePages'
 
 const AppNavigator = createStackNavigator({
